@@ -1,16 +1,20 @@
-﻿string name = "Ewa";
-char sex = 'f';
-int age = 25;
+﻿using System;
 
-if (sex == 'f' && age < 30)
+int[] grades = new int[365];
+List<string> dayOfWeeks = new List<string>();
+dayOfWeeks.Add("poniedzialek");
+dayOfWeeks.Add("wtorek");
+dayOfWeeks.Add("sroda");
+dayOfWeeks.Add("czwartek");
+dayOfWeeks.Add("piatek");
+dayOfWeeks.Add("sobota");
+dayOfWeeks.Add("niedziela");
+//Console.WriteLine(dayOfWeeks[2]);
+
+//string[] dayOfWeeks2 = { "poniedzialek", "wtorek", "sroda", "czwartek", "piatek", "sobota", "niedziela" };
+//Console.WriteLine(dayOfWeeks[0]);
+
+foreach (var day in dayOfWeeks)
 {
-    Console.WriteLine("Kobieta ponizej 30 lat");
-}
-else if (name == "Ewa" && age == 30)
-{
-    Console.WriteLine("Ewa, lat 30");
-}
-else if (sex != 'f' && age < 18)
-{
-    Console.WriteLine("Niepelnoletni mezczyzna");
+    Console.WriteLine(day);
 }
